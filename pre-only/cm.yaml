@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: site-demo
 data:
-  my_decimal: "3"
+  my_decimal: "8"
   my_str: "ser-interface.properties"
