@@ -1,9 +1,6 @@
 namePrefix: pre-only
 
 
-bases:
-- ../kustomize-guestbook
-
 resources:
 - cm.yaml
 - pre-sync.yaml
