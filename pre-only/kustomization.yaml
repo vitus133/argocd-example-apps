@@ -5,5 +5,5 @@ bases:
 - ../kustomize-guestbook
 
 resources:
-# - pre-sync-job.yaml
-- skip-sync.yaml
+- cm.yaml
+- pre-sync.yaml

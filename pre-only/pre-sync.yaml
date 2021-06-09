@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: site-converter
+  annotations:
+    argocd.argoproj.io/hook: Pre
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: site-converter
+  template:
+    metadata:
+      labels:
+        app: site-converter
+    spec:
+      containers:
+      - name: sleep
+        image: alpine:latest
+        command: ["sleep", "3000"]
+
