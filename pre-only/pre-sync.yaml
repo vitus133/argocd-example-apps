@@ -18,6 +18,7 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: alpine:latest
-        command: ["sleep", "3000"]
+        image: openshift/hello-openshift:latest
+        ports:
+        - containerPort: 80
 
