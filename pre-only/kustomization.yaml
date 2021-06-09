@@ -2,5 +2,6 @@ namePrefix: pre-only
 
 
 resources:
-- cm.yaml
-- pre-sync.yaml
+- hello.yaml
+# - cm.yaml
+# - pre-sync.yaml
