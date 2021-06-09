@@ -4,4 +4,4 @@ namePrefix: pre-only
 resources:
 - hello.yaml
 # - cm.yaml
-# - pre-sync.yaml
+- pre-sync.yaml

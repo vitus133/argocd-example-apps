@@ -1,24 +1,17 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: batch/v1
+kind: Job
 metadata:
-  name: site-converter
+  name: before
   annotations:
     argocd.argoproj.io/hook: Pre
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
-  replicas: 1
-  revisionHistoryLimit: 3
-  selector:
-    matchLabels:
-      app: site-converter
   template:
-    metadata:
-      labels:
-        app: site-converter
     spec:
       containers:
       - name: sleep
-        image: openshift/hello-openshift:latest
-        ports:
-        - containerPort: 80
+        image: alpine:latest
+        command: ["sleep", "10"]
+      restartPolicy: Never
+  backoffLimit: 0
 
