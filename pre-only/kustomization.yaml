@@ -2,3 +2,4 @@ namePrefix: pre-only
 
 resources:
 - pre-sync-job.yaml
+- skip-sync.yaml
