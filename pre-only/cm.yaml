@@ -4,4 +4,4 @@ metadata:
   name: site-demo
 data:
   my_decimal: "9"
-  my_str: "ser-interface.properties"
+  my_str: "String of gibberish"
