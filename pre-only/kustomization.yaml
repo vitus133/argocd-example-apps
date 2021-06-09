@@ -1,7 +1,5 @@
-namePrefix: pre-only
-
-
-resources:
+namePrefix: pre-only-
+bases:
 - hello.yaml
 # - cm.yaml
 - pre-sync.yaml
