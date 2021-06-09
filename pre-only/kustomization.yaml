@@ -1,5 +1,5 @@
 namePrefix: pre-only-
 bases:
-- hello.yaml
-# - a-job.yaml
+# - hello.yaml
+- cm.yaml
 - pre-sync.yaml
